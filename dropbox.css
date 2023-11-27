@@ -1,0 +1,244 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+nav{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav .logo{
+    color: black;
+    background-color: white;
+    font-weight: 700;
+}
+
+nav .logo:hover{
+    color: black;
+}
+
+.dropbtn{
+    color: black;
+    font-size: 16px;
+}
+  
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #e2dfcf;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+ 
+.dropdown-content a{
+    width: 200px;
+    color: black;
+    padding: 6px 14px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+
+.dropdown-content p{
+    width: 100%;
+    color: black;
+    padding: 14px 16px 5px 10px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.dropdown-content span{
+    font-weight: 700;
+}
+
+.dropdown-content a:hover{
+	display: block;
+   }
+
+.dropdown-content a:hover {
+    background-color: #d1cbaeb9;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d1cbaeb9;
+    color: black;
+}
+
+li a, .signin, .login {
+    color: black;
+}
+li a:hover, .signin:hover, .login:hover{
+    background-color: rgba(219, 213, 179, 0.699);
+    color: black;
+}
+.btn-1{
+    background-color: rgb(49, 49, 232);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.btn-1:hover{
+    background-color: rgb(29, 29, 193);
+    color: white;
+}
+
+
+
+.left{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.right{
+    background-color: rgb(219, 213, 204);
+}
+.btn-2{
+    border: none;
+    color: black;
+    height: 75px;
+    width: 70%;
+    background-color: rgb(0, 118, 252);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.btn-2:hover{
+    background-color: rgb(37, 67, 217);
+}
+.content-1 span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.content-1 a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 160, 160);
+
+}
+.content-1 a:hover{
+    color: white;
+    text-decoration-color: white;
+}
+
+
+
+.content-2{
+    background-color: rgb(250, 246, 238);
+    font-family: 'Montserrat', sans-serif;
+}
+.content-2 h1{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+.content-3{
+    background-color: rgb(250, 246, 238);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.data-1{
+    background-color: rgb(225, 220, 207);
+}
+.content-3 span{
+    font-weight: 600;
+}
+
+
+
+
+.content-4{
+    background-color: rgb(250, 246, 238);
+}
+.row .card-1, .row .card-2{
+    min-width: 550px;
+    max-width: 560px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.card-1 img, .card-2 img{
+    border-radius: 10px 10px 0px 0px;
+}
+.card-1 span, .card-2 span{
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+}
+.card-1 p, .card-2 p{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-3, .btn-4{
+    border-radius: 10px;
+    background-color: rgb(49, 107, 232);
+    height: 60px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn-3{
+    width: 280px;
+    margin: 30px 0px 50px 48px;
+}
+.btn-3:hover, .btn-4:hover{
+    background-color: rgb(55, 118, 255);
+}
+.btn-4{
+    margin: 30px 0px 50px 48px;
+    width: 330px;
+}
+
+
+
+.content-5{
+    background-color: rgb(250, 246, 238);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-5 h2{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+.content-5 a{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+    text-decoration-color: rgb(139, 139, 139);
+    color: black;
+}
+.content-5 a:hover{
+    color: black;
+    text-decoration-color: black;
+}
+
+
+
+.content-6{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-6 h2{
+    text-align: center;
+    margin: auto;
+}
