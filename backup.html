@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-backup</title>
+    <link rel="stylesheet" href="backup.css">
+
+    <link rel="stylesheet" href="C:\Users\01\Downloads\bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="logo navbar-brand" href="#">
+            <img src="dropbox-logo-1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            DropBox
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Why Dropbox?
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <p class="pl-3">Overview</p>
+                        <a class="dropdown-item" href="get_inspired.html">Get inspired</a>
+                        <a class="dropdown-item" href="#">What customers say</a>
+                        <a class="dropdown-item" href="#">App integrations</a>
+                        <a class="dropdown-item" href="#">Resources</a>
+                        <div class="dropdown-divider"></div>
+                        <p class="pl-3">Better with Dropbox</p>
+                        <a class="dropdown-item" href="#">Share files</a>
+                        <a class="dropdown-item" href="#">Store and organize</a>
+                        <a class="dropdown-item" href="#">Sync your devices</a>
+                        <a class="dropdown-item" href="#">Protect and secure data</a>
+                        <a class="dropdown-item" href="#">Connect remote teams</a>
+                        <a class="dropdown-item" href="#">Keep work moving</a>
+                        <a class="dropdown-item" href="#">Always-on backup</a>
+                        <a class="dropdown-item" href="#">Sign a document</a>
+                        <a class="dropdown-item" href="#">Track document analytics</a>
+                    </div>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="dropbtn nav-link" href="#">Products</a>
+                    <div class="dropdown-content">
+                        <p>Do more than store with Dropbox</p>
+                        <a href="dropbox.html"><span>Dropbox</span><br>Store,share,and access files across devices</a>
+                        <a href="backup.html"><span>Backup</span><br>Automatic back up your devices</a>
+                        <a href="#"><span>Sign</span><br>Request and add  signatures to  documents</a>
+                        <a href="#"><span>DocSend</span><br>Send documents securely and track activity</a>
+                        <a href="#"><span>Capture</span><br>Create screen  recordings and video messages</a>
+                        <a href="#"><span>Replay</span><br>Review and approve video faster</a>
+                        <a href="#"><span>Dash(beta)</span><br>Serach, organize and find answers</a>
+                        <a href="#"><span>Early access</span><br>Preview new product experiences</a>
+                    </div>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="dropbtn nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <p class="pl-3">Roles</p>
+                        <a class="dropdown-item" href="">Creatives</a>
+                        <a class="dropdown-item" href="">Sales</a>
+                        <a class="dropdown-item" href="">Marketing</a>
+                        <a class="dropdown-item" href="">HR</a>
+                        <a class="dropdown-item" href="">IT</a>
+                        <a class="dropdown-item" href="">Team Lead</a>
+                        <a class="dropdown-item" href="">Personal</a>
+                        <div class="dropdown-divider"></div>
+                        <p class="pl-3">Industries</p>
+                        <a class="dropdown-item" href="">Cunstuction</a>
+                        <a class="dropdown-item" href="">Technology</a>
+                        <a class="dropdown-item" href="">Manufacturing</a>
+                        <a class="dropdown-item" href="">Media</a>
+                        <a class="dropdown-item" href="">Professional Services</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Pricing</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="dropdown nav-item ">
+                    <a class="dropbtn nav-link " href="#">Contact</a>
+                    <div style="overflow-y: hidden;" class="dropdown-content">
+                        <p>Contact sales</p>
+                        <a href="">Email</a>
+                        <a href="">+1 855-237-6726</a>
+                        <p>Support</p>
+                        <a href="">Help center</a>
+                        <a href="">Community forums</a>
+                    </div>
+                </li>
+                <li class="dropdown nav-item ">
+                    <a class="dropbtn nav-link " href="#">Get app</a>
+                    <div style="overflow-y: hidden;" class="dropdown-content">
+                        <a href="">Desktop app</a>
+                        <a href="">Mobile app</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="headlast d-flex justify-content-between">
+                <a class="signin nav-link" href="#">Sign up</a>
+                <a class="login nav-link" href="#">Log in</a>
+                <a class="btn-1 nav-link" href="#">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content-1 container-fluid">
+        <div class="row">
+            <div class="left px-4 py-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <p><span>Dropbox Backup</span></p>
+                <h1 class="pb-3">Peace of mind for your digital life and work</h1>
+                <p class="pb-3">Don’t wait until something goes wrong—automatically back up important files on your devices and easily restore them, with Dropbox Backup.</p>
+                <button class="btn-2">Get Backup with DropBox</button><br><br>
+                <a class="" href="">Already have a Dropbox account? Try Backup now</a>
+            </div>
+            <div class="right p-0 col-sm-12 col-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center">
+                <video  width="100%" height="auto" autoplay loop >
+                    <source src="https://aem.dropbox.com/cms/content/dam/dropbox/warp/en-us/backup/01_Backup_Simple-Computer-Backup_1080x1080.webm" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="content-2">
+        <div class="row px-3 py-5 text-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h4 >Choose your Dropbox plan</h4>
+                <p>Get Backup, plus a robust set of organization and collaboration tools, with any Dropbox plan.</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-3 container-fluid">
+        <div class="row px-5 py-3">
+            <div class="radio-1 d-flex flex-row col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3">
+                <input type="radio" name="options" id="fstBtn" onclick="changePrice()" value="option1">
+                <label class="pl-2" for="option1">Billed monthly</label>
+            </div>
+            <div class="radio-2 d-flex flex-row col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3">
+                <input type="radio" name="options" id="secBtn" onclick="changePrice1()" value="option1" checked>
+                <label class="pl-2" for="option2">Billed yearly</label>
+            </div>
+        </div>
+        <div class="row px-3 py-4">
+            <div class="px-4 py-1 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="row card-1 px-3 py-4">
+                    <div class="pb-3 d-flex flex-row align-items-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        <p class="mb-0 pl-2"><span>Individual</span></p>
+                    </div>
+                    <div class="pb-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h4>Basic</h4>
+                    </div>
+                    <div class="pb-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h5><span>Free</span></h5>
+                    </div>
+                    <div class="pb-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h6>5 GB of storage • 1 user</h6>
+                    </div>
+                    <div class="pb-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <p>Protect important files and devices with Backup—plus access and share your essential photos and documents with Dropbox—for free.</p>
+                    </div>
+                    <div class="pb-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <button class="btn-3 text-left">Get started</button>
+                    </div>
+                    <div class="pt-5 pb-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="pl-0 pr-0">
+                            <p><span>Plan highlights</span></p>
+                        </div>
+                        <div class="line-1 d-flex flex-row ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Automatically back up files and quickly<br> recover with Dropbox Backup</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Best-in-class sync technology</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Connect up to 3 devices</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Send files up to 100 MB with Dropbox Transfer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-4 py-1 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="row card-1 px-3 py-4">
+                    <div class="pb-3 d-flex flex-row align-items-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                        <p class="mb-0 pl-2"><span>Individual</span></p>
+                    </div>
+                    <div class="pb-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h4>Plus</h4>
+                    </div>
+                    <div class="pb-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h5><span id="priceOne">$9.99 / month</span></h5>
+                    </div>
+                    <div class="pb-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h6>2 TB (2,000 GB) of storage • 1 user</h6>
+                    </div>
+                    <div class="pb-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <p>Keep your devices safe with Backup—and store and share 2 TB of files like photos, documents, and more.</p>
+                    </div>
+                    <div class="pb-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <button class="btn-4 text-left">Buy now</button>
+                    </div>
+                    <div class="pt-5 pb-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="pl-0 pr-0">
+                            <p><span>Plan highlights</span></p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Automatically back up files and quickly<br> recover with Dropbox Backup</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Best-in-class sync technology</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Unlimited device access</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Priority email and live chat support</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Send files up to 2 GB with Dropbox Transfer</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Remote device wipe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-4 py-1 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="row card-1 px-3 py-4">
+                    <div class="pb-3 d-flex flex-row align-items-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        <p class="mb-0 pl-2"><span>Individual</span></p>
+                    </div>
+                    <div class="pb-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h4>Professional</h4>
+                    </div>
+                    <div class="pb-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h5><span id="priceTwo">$16.58 / month</span></h5>
+                    </div>
+                    <div class="pb-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h6>3 TB (3,000 GB) of storage • 1 user</h6>
+                    </div>
+                    <div class="pb-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <p>Safeguard more devices with Backup—and get premium tools for managing content, clients, and projects.</p>
+                    </div>
+                    <div class="pb-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <button class="btn-4 text-left">Try for free</button>
+                    </div>
+                    <div class="pt-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <a href="">or purchase now</a>
+                    </div>
+                    <div class="pt-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="pl-0 pr-0">
+                            <p><span>Plan highlights</span></p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Automatically back up files and quickly<br> recover with Dropbox Backup</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Best-in-class sync technology</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Unlimited device access</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Priority email and live chat support</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Send files up to 100 GB with Dropbox Transfer</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Remote device wipe</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Document watermarking</p>
+                        </div>
+                        <div class="line-1 d-flex flex-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            <p class="pl-2 pr-2">Branded sharing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-4">
+        <div class="row">
+            <div class="px-4 py-5 d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h2>Easy to use. Secure. Fast.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="content-5">
+        <div class="container">
+        <div class="row py-3">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row m-2">
+                    <div class="data-1 col-12 p-3 py-4 d-flex justify-content-center">
+                        <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/01_Backup_Simple-Computer-Backup_840x840.png?id=82281998-f695-4e27-80bc-54964274afab&width=828&output_type=webp" alt="" width="90%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
+                        <p class="mt-4"><span>Backup made simple</span></p>
+                    </div>
+                    <div class="col-12 p-0">
+                        <p class="mt-2">In just a few clicks, you can choose the files and folders you want Backup to keep safe, and we’ll take it from there.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row m-2">
+                    <div class="data-1 col-12 p-3 py-4 d-flex justify-content-center">
+                        <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/03_Backup-External-Drive_840x840.png?id=5098b754-be53-4b5f-8f1c-72e2e3e7789a&width=828&output_type=webp" alt="" width="90%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
+                        <p class="mt-4"><span>An automated safety net</span></p>
+                    </div>
+                    <div class="col-12 p-0">
+                        <p class="mt-2">Automatic, always-on cloud backup saves you from accidental deletions, drive failures, and ransomware attacks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row m-2">
+                    <div class="data-1 col-12 p-3 py-4 d-flex justify-content-center">
+                        <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/02_Backup_Restoration_840x840.png?id=52ff9a9b-9e32-468b-8ee5-7ea6d9442fab&width=828&output_type=webp" alt="" width="90%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
+                        <p class="mt-4"><span>Fast file recovery</span></p>
+                    </div>
+                    <div class="col-12 p-0">
+                        <p class="mt-2">Restore files quickly, and they’ll show up right back where you had them—no need to reorganize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="content-6">
+        <div class="row">
+            <div class="px-4 py-5 d-flex justify-content-center text-center col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h2>Automatic backup means quick recovery for your most important files</h2>
+            </div>
+        </div>
+    </div>
+    <div class="content-7">
+        <div class="row px-3 py-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header p-0" id="headingOne">
+                        <p class="mb-0">
+                          <button  onclick="changeSlide(1)" class="clickBtn w-100 px-4 py-4 text-left collapsed" id="clickBtn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Migrate files to a new computer
+                          </button>
+                        </p>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body px-5 py-4">
+                            You can restore your files to a new computer to get your shiny new laptop up and running with ease—no complicated or slow manual connections from computer to computer.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header p-0" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button onclick="changeSlide(2)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Easily recover if something goes wrong
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body px-5 py-4">
+                            Getting back up and running works just the way it should—quickly and easily. Start recovery with just a few clicks, and your files will be automatically restored from cloud backup to their original locations.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header p-0" id="headingThree">
+                        <h5 class="mb-0">
+                          <button onclick="changeSlide(3)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Consolidate tools and have less to manage
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body px-5 py-4">
+                            Backup is included in all Dropbox plans, giving you cloud backup and all the tools you need to collaborate and stay organized—all in a single subscription.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-0" id="headingFour">
+                          <h5 class="mb-0">
+                            <button onclick="changeSlide(4)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Keep your files secure
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                          <div class="card-body px-5 py-4">
+                            Built on a secure and reliable network trusted by 700 million users worldwide, your files are safe with Dropbox.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-0" id="headingFive">
+                          <h5 class="mb-0">
+                            <button onclick="changeSlide(5)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Keep backed up files in their own safe place
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                          <div class="card-body px-5 py-4">
+                            Dropbox Backup stores your files separate from your shared files, so you won’t have to worry about overwriting your emergency backups.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-0" id="headingSix">
+                          <h5 class="mb-0">
+                            <button onclick="changeSlide(6)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Back up multiple devices
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                          <div class="card-body px-5 py-4">
+                            One-time setup keeps files stored across devices—like your computer and external drive—safe in one place.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-0" id="headingSeven">
+                          <h5 class="mb-0">
+                            <button onclick="changeSlide(7)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                View backups whenever, wherever
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                          <div class="card-body px-5 py-4">
+                            Just as you’d expect from Dropbox, you can easily get to your backed up files any time, anywhere—from your computer, through our mobile app, or on the web.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center ">
+                <div style="background-color: rgb(255, 71, 29); " class="box px-5 py-5 ">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Backup_migrate_files_1440x1440.png?id=58105247-15e4-4dab-9fc0-7ae97b983f0b&width=1920&output_type=webp" width="100%"  alt="">
+                </div>
+                <div style="background-color: rgb(213, 145, 255); " class="box px-5 py-5 ">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Backup_easily_recover_1440x1440.png?id=b60e06ec-61f1-4763-92f9-6addbd7ce60c&width=1920&output_type=webp" width="100%" alt="">
+                </div>
+                <div style="background-color: rgb(0, 189, 241); " class="box px-5 py-5 ">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Backup-consolidate-tools-1440x1440.png?id=f3af389e-caaa-44e0-80fc-49d5ec88f0a1&output_type=webp" width="100%" height="95%" alt="">
+                </div>
+                <div style="background-color: rgb(236, 232, 0); " class="box px-5 py-5 ">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Backup-secure-files-1440x1440.png?id=2590edd3-e04a-4b41-b89e-85d9f0f60a79&output_type=webp" width="100%" alt="">
+                </div>
+                <div style="background-color: rgb(246, 177, 172); " class="box px-5 py-5 ">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Backup_keep_files_separate_1440x1440.png?id=56e7c04b-3b3e-4023-887b-c6eb428fbe82&width=1920&output_type=webp" width="100%" alt="">
+                </div>
+                <div style="background-color: rgb(0, 189, 241); " class="box px-5 py-5 ">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Backup_multiple_device_backup_1440x1440.png?id=94f0d8d2-5c68-4ffe-af46-f45e13dde525&width=1920&output_type=webp" width="100%" alt="">
+                </div>
+                <div style="background-color: rgb(112, 204, 0); " class="box px-5 py-5 ">
+                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Backup_mobile_backup_1440x1440.png?id=f6f79922-b054-4058-9b45-9be63eaaca89&width=1920&output_type=webp" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-8">
+        <div class="row">
+            <div class="px-4 py-5 d-flex flex-column align-items-center justify-content-center text-center col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h2 class="pb-2">Easier than the competition</h2>
+                <p>Dropbox Backup users ranked Dropbox Backup as more intuitive and easier to use than Backblaze and Carbonite in a recent study comparing top backup solutions.*</p>
+                <p>*Based on a 2021 Dropbox research survey of registered Dropbox users who have used Dropbox Backup</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-9">
+        <div class="row">
+            <div class="px-4 py-5 d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1>What Backup customers are saying</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="content-10 py-4 px-4 carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+        </ol>
+        <div class="carousel-inner justify-content-between">
+          <div class="carousel-item active">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <img class="d-block" src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/ginaolson.png?id=78594a41-8a36-4ff9-bff2-b559f4baed14&width=1024&output_type=webp" alt="First slide" width="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3 d-flex flex-column justify-content-center">
+                    <p class="slide-txt-1 ">“Dropbox Backup calms my anxiety a bit. I've been using my work computer for a year now, but since it is from 2012 I know there's a possibility that it will freeze, fail, or die soon. But everything is backed up. That's a huge relief.”</p>
+                    <p class="pt-3 mb-0"><span>Gina Olson, United States</span></p>
+                    <!-- <a class="mb-2" href="#">Read the full story</a>
+                    <p class="mb-0"><span>Mary Ashley Krogh (MAK)</span></p>
+                    <p class="last-line mb-0">Illustrator and Graphic Designer</p> -->
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h4>01/07</h4>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <img class="d-block" src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/peterferguson.png?id=9b134af0-8356-430d-a299-172b17e7c976&width=1024&output_type=webp" alt="Second slide" width="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                    <p class="slide-txt-1 ">“To me, Dropbox Backup is a good alternative to Carbon Copy Cloner, because I know it’s a complete identical index in the cloud, and it is integrated right into Dropbox with the rest of my files. For me it’s super important to have those external drives thoroughly indexed, safely backed up, and available wherever I am."</p>
+                    <p class="pt-3 mb-0"><span>Peter Ferguson, Nashville, TN</span></p>
+                    <!-- <a class="mb-2" href="#">Read the full story</a>
+                    <p class="mb-0"><span>Adam Montgomery</span></p>
+                    <p class="last-line mb-0">Senior Manager of Programming, Sundance Film Festival</p> -->
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h4>02/07</h4>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/work%20desk%20plant.svg?id=53aa7464-b6d5-47fb-a435-d07deb4cef66" alt="Third slide" width="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                    <p class="slide-txt-1 ">“With Dropbox Backup, I don’t have to think about the last time my computer backed itself up. It’s seamless. It gets set up, it has a task to do and it does its job. I don’t have to think about it doing its job”</p>
+                    <p class="pt-3 mb-0"><span>C. Gage, United States</span></p>
+                    <!-- <a class="mb-2" href="#">Read the full story</a>
+                    <p class="mb-0"><span>Ann Kappes</span></p>
+                    <p class="last-line mb-0">Director of Art Partnerships at Creativity Explored</p> -->
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h4>03/07</h4>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/work%20outside.svg?id=4d50dee2-98d5-48a4-b866-e8849adb47fe" alt="Fourth slide" width="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                    <p class="slide-txt-1">“Dropbox Backup is excellent. You can easily back up all the files that you want to, make changes anytime, choose which folders you want to back up, and access your files everywhere.”</p>
+                    <p class="pt-3 mb-0"><span>Arvin Velarde, United States</span></p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h4>04/07</h4>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/Ekaterina-Borschov-Badano.png?id=95c4c069-53e0-464d-a058-78502f1487af&width=1024&output_type=webp" alt="Fifth slide" width="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                    <p class="slide-txt-1">“Dropbox Backup has improved my productivity since I don't have to spend so much time backing up my work to portable hard drives or syncing files to Dropbox. It also made it very easy to transfer all my files when I bought a new computer!”</p>
+                    <p class="pt-3 mb-0"><span>Ekaterina Borschov-Badano, United States</span></p>
+                    <!-- <a class="mb-2" href="#">Read the full story</a>
+                    <p class="mb-0"><span>Sophia Chang</span></p>
+                    <p class="last-line mb-0">Illustrator and Designer</p> -->
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h4>05/07</h4>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/alexgeller.png?id=80a0a54e-ef04-46f8-b726-8905630385f9&width=1024&output_type=webp" alt="Sixth slide" width="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                    <p class="slide-txt-1 ">“With Dropbox Backup, you have a complete backup of information so if you were to lose it, you have an easy way to get it back and access it all in one spot.”</p>
+                    <p class="pt-3 mb-0"><span>Alex Geller, United States</span></p>
+                    <!-- <a class="mb-2" href="#">Read the full story</a>
+                    <p class="mb-0"><span>Sahir Zaveri</span></p>
+                    <p class="last-line mb-0">CEO of King Children</p> -->
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h4>06/07</h4>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/backup/M-collins.png?id=0c2fddab-05ff-4ceb-9882-c2812c9712c8&width=1024&output_type=webp" alt="Seven slide" width="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                    <p class="slide-txt-1">"Dropbox Backup has been great—I really like it. I was using another platform called CrashPlan and I didn’t really love it that much. With Dropbox Backup, it’s nice because it fits in with my workflow. I’m so used to using Dropbox for everything else and I prefer to have everything in one place anyway."</p>
+                    <p class="pt-3 mb-0"><span>M. Collins, United States</span></p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h4>07/07</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="" aria-hidden="true"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="" aria-hidden="true"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="content-11 ">
+        <div class="row px-5 py-5 d-flex justify-content-center">
+            <div class="d-flex justify-content-center col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                <h1>For all devices worth securing</h1>
+            </div>
+            <div class="d-flex text-left col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <button class="btn-5 ">Find the right Dropbox plan for you</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer container-fluid py-3 d-flex justify-content-center">
+        <div class="row">
+            <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                <p>Dropbox</p>
+                <a href="">Desktop app</a>
+                <a href="">Moblie app</a>
+                <a href="">Integrations</a>
+                <a href="">Features</a>
+                <a href="">Solutions</a>
+                <a href="">Do more than store</a>
+                <a href="">Security</a>
+                <a href="">Advance access</a>
+            </div>
+            <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                <p>Products</p>
+                <a href="">Plus</a>
+                <a href="">Professional</a>
+                <a href="">Business</a>
+                <a href="">Enterprise</a>
+                <a href="">Dropbox Sign</a>
+                <a href="">DocSend</a>
+                <a href="">Plans</a>
+                <a href="">Product updates</a>
+            </div>
+            <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                <p>Support</p>
+                <a href="">Help center</a>
+                <a href="">Contact us</a>
+                <a href="">Privacy & terms</a>
+                <a href="">Cookie policy</a>
+                <a href="">Cookies & CCPA preferences</a>
+                <a href="">AI principles</a>
+                <a href="">Sitemap</a>
+                <a href="">Learning resources</a>
+            </div>
+            <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                <p>Community</p>
+                <a href="">Blog</a>
+                <a href="">Developers</a>
+                <a href="">Community forums</a>
+                <a href="">Referrals</a>
+                <a href="">Reseller partners</a>
+                <a href="">Integration partners</a>
+            </div>
+            <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                <p>Company</p>
+                <a href="">About us</a>
+                <a href="">Jobs</a>
+                <a href="">Investor relations</a>
+                <a href="">ESG</a>
+                <a href="">Find a partner</a>
+            </div>
+        </div>
+    </div>
+    <div class="social-link contanet pb-5 px-5">
+        <a href="">
+            <img src="https://cdn-icons-png.flaticon.com/128/10091/10091904.png" alt="twitter" width="38px">
+        </a>
+        <a href="">
+            <img src="https://cdn-icons-png.flaticon.com/128/10091/10091734.png" alt="facebook" width="38px">
+        </a>
+        <a href="">
+            <img src="https://cdn-icons-png.flaticon.com/128/11023/11023938.png" alt="youtube" width="35px">
+        </a>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        // document.getElementById("fstBtn");
+
+        function changePrice(){
+            document.getElementById("priceOne").innerHTML = "$11.99 / month";
+            document.getElementById("priceTwo").innerHTML = "$19.99 / month";
+        }
+
+        function changePrice1(){
+            document.getElementById("priceOne").innerHTML = "$9.99 / month";
+            document.getElementById("priceTwo").innerHTML = "$16.58 / month";
+        }
+
+
+        let index = 1;
+        current(index);
+
+        function changeSlide(n){
+            current(index = n);
+        }
+ 
+        function current(n){
+            let i;
+            let btn = document.getElementsByClassName("clickBtn");
+            let ig = document.getElementsByClassName("box");
+            for(i = 0; i < ig.length; i++){
+                ig[i].style.display = "none";
+            }
+            for(i = 0; i < btn.length; i++){
+                btn[i].length = btn[i].className.replace(" active","");
+            }
+            ig[index - 1].style.display = "block";
+            btn[index - 1].className += " active";
+        }
+    </script>
+</body>
+</html>

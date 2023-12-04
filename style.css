@@ -250,6 +250,7 @@ li a:hover, .signin:hover, .login:hover{
 .row .card-1{
     background-color: rgb(44, 44, 44);
     border-radius: 10px;
+    height: 570px;
 }
 .content-7 img{
     border-radius: 10px 10px 0px 0px;
@@ -263,6 +264,7 @@ li a:hover, .signin:hover, .login:hover{
     padding: 10px;
     color: black;
     font-size: 20px;
+    font-weight: 600;
     text-decoration: none;
 }
 .btn-3:hover, .btn-4:hover{
@@ -318,13 +320,15 @@ li a:hover, .signin:hover, .login:hover{
     line-height: 30px;
 }
 .content-9 a{
-    color: rgb(206, 206, 206);
+    color: white;
     font-weight: 800;
     font-size: 17px;
     text-decoration: underline;
+    text-decoration-color: rgb(142, 142, 142);
 }  
 .content-9 a:hover{
     color: white;
+    text-decoration-color: white;
 } 
 .content-9 span{
     font-size: 14px;
@@ -341,6 +345,19 @@ svg{
 .content-9:hover svg{
     display: flex;
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .content-9 .slide-txt-1{
+        font-size: 20px;
+        line-height: 21px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .content-9 .slide-txt-1{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
 
 
 
@@ -354,7 +371,6 @@ svg{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 45px;
-    align-items: center;
 }
 .btn-5{
     border: none;
@@ -369,6 +385,11 @@ svg{
 .btn-5:hover{
     background-color: rgb(55, 118, 255);
 }
+@media screen and (max-width: 992px) {
+    .content-10 h1{
+        padding-bottom: 15px;
+    }
+}
 
 
 
@@ -376,10 +397,8 @@ svg{
 .footer{
     background-color: black;
 }
-
 .l-1{
     min-width: 220px;
-    max-width: 200px;
 }
 .l-1 a, .l-1 p{
     display: flex;
@@ -411,9 +430,15 @@ svg{
 @media screen and (min-width: 200px) and (max-width: 440px) {
     .l-1{
         min-width: 100px;
-        max-width: 150px;
     }
 }
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+    .l-1{
+        min-width: 200px;
+        max-width: 180px;
+    }
+}
+
 
 
 
@@ -446,4 +471,27 @@ svg{
         height: 50px;
     }
     
+}
+
+@media screen and (max-width: 400px) {
+    .content-1 h1{
+        font-size: 24px;
+    }
+    .content-2 h1{
+        font-size: 24px;
+    }
+    .content-4 h1{
+        font-size: 24px;
+    }
+    .content-6 h1{
+        font-size: 24px;
+    } 
+    .content-10 h1{
+        font-size: 24px;
+    }
+    .content-10 .btn-5{
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
 }

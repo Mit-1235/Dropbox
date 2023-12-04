@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>product-dropbox</title>
 
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\01\Downloads\bootstrap.min.css">
     <link rel="stylesheet" href="dropbox.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,34 +20,38 @@
 </head>
 <body>
     <div class="main">
-        <nav class="navbar navbar-expand-lg sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <a class="logo navbar-brand" href="#">
                 <img src="dropbox-logo-1.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 DropBox
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="dropdown nav-item ">
-                        <a class="dropbtn nav-link" href="#" >Why Dropbox?</a>
-                        <div class="dropdown-content">
-                            <p>Overview</p>
-                            <a href="get_inspired.html">Get inspired</a>
-                            <a href="#">What customers say</a>
-                            <a href="#">App integrations</a>
-                            <a href="#">Resources</a>
-                            <p>Better with Dropbox</p>
-                            <a href="#">Share files</a>
-                            <a href="#">Store and organize</a>
-                            <a href="#">Sync your devices</a>
-                            <a href="#">Protect and secure data</a>
-                            <a href="#">Connect remote teams</a>
-                            <a href="#">Keep work moving</a>
-                            <a href="#">Always-on backup</a>
-                            <a href="#">Sign a document</a>
-                            <a href="#">Track document analytics</a>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Why Dropbox?
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <p class="pl-3">Overview</p>
+                            <a class="dropdown-item" href="get_inspired.html">Get inspired</a>
+                            <a class="dropdown-item" href="#">What customers say</a>
+                            <a class="dropdown-item" href="#">App integrations</a>
+                            <a class="dropdown-item" href="#">Resources</a>
+                            <div class="dropdown-divider"></div>
+                            <p class="pl-3">Better with Dropbox</p>
+                            <a class="dropdown-item" href="#">Share files</a>
+                            <a class="dropdown-item" href="#">Store and organize</a>
+                            <a class="dropdown-item" href="#">Sync your devices</a>
+                            <a class="dropdown-item" href="#">Protect and secure data</a>
+                            <a class="dropdown-item" href="#">Connect remote teams</a>
+                            <a class="dropdown-item" href="#">Keep work moving</a>
+                            <a class="dropdown-item" href="#">Always-on backup</a>
+                            <a class="dropdown-item" href="#">Sign a document</a>
+                            <a class="dropdown-item" href="#">Track document analytics</a>
                         </div>
                     </li>
                     <li class="dropdown nav-item">
@@ -55,7 +59,7 @@
                         <div class="dropdown-content">
                             <p>Do more than store with Dropbox</p>
                             <a href="dropbox.html"><span>Dropbox</span><br>Store,share,and access files across devices</a>
-                            <a href="#"><span>Backup</span><br>Automatic back up your devices</a>
+                            <a href="backup.html"><span>Backup</span><br>Automatic back up your devices</a>
                             <a href="#"><span>Sign</span><br>Request and add  signatures to  documents</a>
                             <a href="#"><span>DocSend</span><br>Send documents securely and track activity</a>
                             <a href="#"><span>Capture</span><br>Create screen  recordings and video messages</a>
@@ -65,22 +69,23 @@
                         </div>
                     </li>
                     <li class="dropdown nav-item">
-                        <a class="dropbtn nav-link" href="#">Solutions</a>
-                        <div class="dropdown-content">
-                            <p>Roles</p>
-                            <a href="">Creatives</a>
-                            <a href="">Sales</a>
-                            <a href="">Marketing</a>
-                            <a href="">HR</a>
-                            <a href="">IT</a>
-                            <a href="">Team Lead</a>
-                            <a href="">Personal</a>
-                            <p>Industries</p>
-                            <a href="">Cunstuction</a>
-                            <a href="">Technology</a>
-                            <a href="">Manufacturing</a>
-                            <a href="">Media</a>
-                            <a href="">Professional Services</a>
+                        <a class="dropbtn nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <p class="pl-3">Roles</p>
+                            <a class="dropdown-item" href="">Creatives</a>
+                            <a class="dropdown-item" href="">Sales</a>
+                            <a class="dropdown-item" href="">Marketing</a>
+                            <a class="dropdown-item" href="">HR</a>
+                            <a class="dropdown-item" href="">IT</a>
+                            <a class="dropdown-item" href="">Team Lead</a>
+                            <a class="dropdown-item" href="">Personal</a>
+                            <div class="dropdown-divider"></div>
+                            <p class="pl-3">Industries</p>
+                            <a class="dropdown-item" href="">Cunstuction</a>
+                            <a class="dropdown-item" href="">Technology</a>
+                            <a class="dropdown-item" href="">Manufacturing</a>
+                            <a class="dropdown-item" href="">Media</a>
+                            <a class="dropdown-item" href="">Professional Services</a>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -90,7 +95,7 @@
                 <ul class="navbar-nav">
                     <li class="dropdown nav-item ">
                         <a class="dropbtn nav-link " href="#">Contact</a>
-                        <div class="dropdown-content">
+                        <div style="overflow-y: hidden;" class="dropdown-content">
                             <p>Contact sales</p>
                             <a href="">Email</a>
                             <a href="">+1 855-237-6726</a>
@@ -101,22 +106,22 @@
                     </li>
                     <li class="dropdown nav-item ">
                         <a class="dropbtn nav-link " href="#">Get app</a>
-                        <div class="dropdown-content">
+                        <div style="overflow-y: hidden;" class="dropdown-content">
                             <a href="">Desktop app</a>
                             <a href="">Mobile app</a>
                         </div>
                     </li>
                 </ul>
-            </div>
-            <div class="headlast d-flex justify-content-between">
-                <a class="signin nav-link" href="#">Sign up</a>
-                <a class="login nav-link" href="#">Log in</a>
-                <a class="btn-1 nav-link" href="#">Get Started</a>
+                <div class="headlast d-flex justify-content-between">
+                    <a class="signin nav-link" href="#">Sign up</a>
+                    <a class="login nav-link" href="#">Log in</a>
+                    <a class="btn-1 nav-link" href="#">Get Started</a>
+                </div>
             </div>
         </nav>
         <div class="content-1 container-fluid">
             <div class="row">
-                <div class="left p-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="left px-4 py-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <p><span>Dropbox</span></p>
                     <h1 class="pb-3">Do more than store with Dropbox</h1>
                     <p class="pb-3">Bring your entire workflow together on one integrated platform that works with the tools you already use. Edit PDFs, share videos, sign documents, and collaborate seamlessly with internal and external stakeholders—all without leaving Dropbox.</p>
@@ -130,8 +135,8 @@
         </div>
         <div class="content-2">
             <div class="row">
-                <div class="py-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
-                    <h1 class="p-5">Keep everything at your fingertips</h1>
+                <div class="py-3 px-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                    <h1 class="p-3">Keep everything at your fingertips</h1>
                 </div>
             </div>
         </div>
@@ -183,33 +188,55 @@
 
         <div class="content-2">
             <div class="row">
-                <div class="py-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <h1 class="p-5">How will you use Dropbox?</h1>
+                <div class="py-3 px-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1 class="p-3">How will you use Dropbox?</h1>
                 </div>
             </div>
         </div>
 
-        <div class="content-4 container-fluid d-flex justify-content-center">
-            <div class="row gx-5 d-flex justify-content-center">
-                <div class="card-1 p-0 m-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/dropbox/professionals-ui-1272x424.jpg?id=5292c821-d047-4218-a4e1-72b01148e8ce&output_type=webp" alt="" width="100%">
-                    <p class="py-4 px-5"><span class="">For work</span></p>
-                    <p class="py-3 px-5">Work efficiently with teammates and clients, stay in sync on projects, and keep company data safe—all in one place.</p>
-                    <button class="btn-3">Try Dropbox</button>
+        <div class="content-4 d-flex justify-content-center">
+            <div class="container">
+            <div class="row">
+                <div class="p-4 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="row card-1">
+                        <div class="p-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <img src="main/card-2.jpg" alt="" width="100%">
+                        </div>
+                        <div class="px-4 pt-4 pb-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <p class=""><span class="">For work</span></p>
+                        </div>
+                        <div class="px-4 pb-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <p class="">Work efficiently with teammates and clients, stay in sync on projects, and keep company data safe—all in one place.</p>
+                        </div>
+                        <div class="one px-4 pt-5 pb-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                            <a href="" class="btn-3">Try Dropbox</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-2 p-0 m-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/dropbox/teams-ui-1272x424.jpg?id=be7c9ef3-bc5a-424c-8892-02c70f18657b&output_type=webp" alt="" width="100%">
-                    <p class="py-4 px-5"><span>For personal use</span></p>
-                    <p class="py-3 px-5">Keep everything that's important to you and your family shareable and safe in one place. Back up files in the cloud, share photos and videos, and more.</p>
-                    <button class="btn-4">Get Dropbox Plus</button>
+                <div class="p-4 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="row card-1">
+                        <div class="p-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <img src="main/card-1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="px-4 pt-4 pb-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <p class=""><span>For personal use</span></p>
+                        </div>
+                        <div class="px-4   col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <p class="">Keep everything that’s important to you shareable and safe in one place. Store files in the cloud, share photos and videos, and more.</p>
+                        </div>
+                        <div class="px-4 pt-5 pb-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <a class="btn-4" href="">Get Dropbox Plus</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </div>
 
         <div class="content-5">
             <div class="row">
-                <div class="py-3 px-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-column justify-content-center ">
-                    <h2 class="px-5 py-5">Trusted by over 700 million registered users and 600,000 teams</h2>
+                <div class="py-3 px-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-column justify-content-center ">
+                    <h1 class="p-3">Trusted by over 700 million registered users and 600,000 teams</h1>
                     <a class="" href="">View customer stories</a>
                 </div>
             </div>
@@ -217,13 +244,245 @@
 
         <div class="content-6">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-column justify-content-center ">
-                    <h2 class="px-5 py-5">What Dropbox customers are saying</h2>
+                <div class="py-3 px-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-column justify-content-center ">
+                    <h1 class="p-3">What Dropbox customers are saying</h1>
                 </div>
             </div>
         </div>
 
+        <div id="carouselExampleIndicators" class="content-7 py-4 px-4 carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
 
+            </ol>
+            <div class="carousel-inner justify-content-between">
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <img class="d-block" src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/Dropbox_DWG/quote_2560x1440_1.jpg?id=5c6a4d49-6d0f-4e50-a3a9-1899643dfc2e&width=1024&output_type=webp" alt="First slide" width="100%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3 d-flex flex-column justify-content-center">
+                        <p class="slide-txt-1 ">“Dropbox has been tremendously helpful for social media. I can hop on anytime and pull whatever photo is inspiring me to post.”</p>
+                        <a class="mb-2" href="#">Read the full story</a>
+                        <p class="mb-0"><span>Mary Ashley Krogh (MAK)</span></p>
+                        <p class="last-line mb-0">Illustrator and Graphic Designer</p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <h4>01/07</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <img class="d-block" src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/Dropbox_DWG/quote_2560x1440_2.jpg?id=b1b754b5-244b-4a31-8a4f-76ec7666be19&width=1024&output_type=webp" alt="Second slide" width="100%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                        <p class="slide-txt-1 ">“Dropbox increased our team’s collaboration while working from home, which has increased our flexibility and could revolutionize our office culture.”</p>
+                        <a class="mb-2" href="#">Read the full story</a>
+                        <p class="mb-0"><span>Adam Montgomery</span></p>
+                        <p class="last-line mb-0">Senior Manager of Programming, Sundance Film Festival</p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <h4>02/07</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/Dropbox_DWG/quote_2560x1440_3.jpg?id=d58ab911-5d3a-4edc-a129-68a5c164ca02&width=1024&output_type=webp" alt="Third slide" width="100%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                        <p class="slide-txt-1 ">“We're a grass-roots nonprofit. When we use a tool that the rest of the design world uses, it helps professionalize our organization.”</p>
+                        <a class="mb-2" href="#">Read the full story</a>
+                        <p class="mb-0"><span>Ann Kappes</span></p>
+                        <p class="last-line mb-0">Director of Art Partnerships at Creativity Explored</p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <h4>03/07</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/Dropbox_DWG/quote_2560x1440_4.png?id=18161da0-3bc4-40c9-a89a-6685f6e0161f&width=1024&output_type=webp" alt="Fourth slide" width="100%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                        <p class="slide-txt-1">“My sister and I store and share recipes and I use the app on my phone to look up ingredients while I’m at the grocery store. It’s very convenient and user friendly, without a lot of overhead.”</p>
+                        <p class="pt-3 mb-0"><span>Lynette Elliot</span></p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <h4>04/07</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/Dropbox_DWG/quote_2560x1440_5.jpg?id=e1c41b07-cb77-4a83-b521-5f5b99c52ed6&width=1024&output_type=webp" alt="Fifth slide" width="100%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                        <p class="slide-txt-1">“Our team is working remotely—everyone's in a different time zone. Dropbox is a great hub for us to all work at once and seamlessly share files.”</p>
+                        <a class="mb-2" href="#">Read the full story</a>
+                        <p class="mb-0"><span>Sophia Chang</span></p>
+                        <p class="last-line mb-0">Illustrator and Designer</p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <h4>05/07</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/Dropbox_DWG/quote_2560x1440_6.jpg?id=48020aa4-2849-48be-9d8d-ccb6bbd51bce&width=1024&output_type=webp" alt="Sixth slide" width="100%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                        <p class="slide-txt-1 ">“Dropbox version control is very important. You may want to go back to an earlier version because there's an idea in there that you really like.”</p>
+                        <a class="mb-2" href="#">Read the full story</a>
+                        <p class="mb-0"><span>Sahir Zaveri</span></p>
+                        <p class="last-line mb-0">CEO of King Children</p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <h4>06/07</h4>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <img class="d-block " src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/Dropbox_DWG/quote_2560x1440_7.png?id=359adf0f-1fbf-4cb7-bc49-6373cda8b4be&width=1024&output_type=webp" alt="Seven slide" width="100%">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-3 d-flex flex-column justify-content-center">
+                        <p class="slide-txt-1">“We store important photos and documents for our family on Dropbox. Not only do I know they are in a safe location, but I’m also able to access them from anywhere.”</p>
+                        <p class="pt-3 mb-0"><span>Sarah Shelton</span></p>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="index col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                        <h4>07/07</h4>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="" aria-hidden="true"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="" aria-hidden="true"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="content-8 d-flex justify-content-center">
+            <div class="row d-flex justify-content-center px-5 py-5">
+                <div class=" col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <h1>Discover a better way to work together.</h1>
+                </div>
+                <div class=" col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <button class="btn-5">Learn about Dropbox</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer container-fluid py-3 d-flex justify-content-center">
+            <div class="row">
+                <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                    <p>Dropbox</p>
+                    <a href="">Desktop app</a>
+                    <a href="">Moblie app</a>
+                    <a href="">Integrations</a>
+                    <a href="">Features</a>
+                    <a href="">Solutions</a>
+                    <a href="">Do more than store</a>
+                    <a href="">Security</a>
+                    <a href="">Advance access</a>
+                </div>
+                <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                    <p>Products</p>
+                    <a href="">Plus</a>
+                    <a href="">Professional</a>
+                    <a href="">Business</a>
+                    <a href="">Enterprise</a>
+                    <a href="">Dropbox Sign</a>
+                    <a href="">DocSend</a>
+                    <a href="">Plans</a>
+                    <a href="">Product updates</a>
+                </div>
+                <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                    <p>Support</p>
+                    <a href="">Help center</a>
+                    <a href="">Contact us</a>
+                    <a href="">Privacy & terms</a>
+                    <a href="">Cookie policy</a>
+                    <a href="">Cookies & CCPA preferences</a>
+                    <a href="">AI principles</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Learning resources</a>
+                </div>
+                <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                    <p>Community</p>
+                    <a href="">Blog</a>
+                    <a href="">Developers</a>
+                    <a href="">Community forums</a>
+                    <a href="">Referrals</a>
+                    <a href="">Reseller partners</a>
+                    <a href="">Integration partners</a>
+                </div>
+                <div class="l-1 col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 py-5">
+                    <p>Company</p>
+                    <a href="">About us</a>
+                    <a href="">Jobs</a>
+                    <a href="">Investor relations</a>
+                    <a href="">ESG</a>
+                    <a href="">Find a partner</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-link contanet pb-5 px-5">
+            <a href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/10091/10091904.png" alt="twitter" width="38px">
+            </a>
+            <a href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/10091/10091734.png" alt="facebook" width="38px">
+            </a>
+            <a href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/11023/11023938.png" alt="youtube" width="35px">
+            </a>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>
