@@ -9,6 +9,27 @@ body{
 nav{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+      
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 20px;
+        background-color: white;
+    }
+       
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(190, 194, 196); 
+        border-radius: 20px;
+    }
+      
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(87, 87, 87);   
+    }
 }
 
 nav .logo{
@@ -67,64 +88,6 @@ li .dropdown-item:hover{
 
 
 
-
-
-  
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-  
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #e2dfcf;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
- 
-.dropdown-content a{
-    width: 200px;
-    color: black;
-    padding: 6px 14px;
-    text-decoration: none;
-    display: block;
-    float: left;
-    font-size: 12px;
-}
-
-.dropdown-content p{
-    width: 100%;
-    color: black;
-    padding: 14px 16px 5px 10px;
-    font-size: 14px;
-    font-weight: 800;
-    margin-bottom: 0px;
-}
-
-.dropdown-content span{
-    font-weight: 700;
-}
-
-.dropdown-content a:hover{
-	display: block;
-   }
-
-.dropdown-content a:hover {
-    background-color: #d1cbaeb9;
-    text-decoration: none;
-    color: black;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #d1cbaeb9;
-    color: black;
-}
 
 li a, .signin, .login {
     color: black;
@@ -411,8 +374,6 @@ svg{
 .content-11 h1{
     font-weight: 600;
     font-size: 45px;
-    /* font-family: 'Montserrat', sans-serif; */
-    /* align-items: center; */
 }
 .btn-5{
     border: none;
@@ -430,8 +391,19 @@ svg{
     background-color: rgb(55, 118, 255);
 }
 @media screen and (max-width: 992px) {
-    .content-8 h1{
+    .content-11 h1{
         padding-bottom: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content-11 h1{
+        font-size: 27px;
+    }
+    .content-11 .btn-5{
+        height: 80px;
+        width: 220px;
+        font-size: 16px;
+        padding-left: 18px;
     }
 }
 
