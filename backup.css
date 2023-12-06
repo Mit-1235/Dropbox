@@ -118,7 +118,8 @@ li a:hover, .signin:hover, .login:hover{
 }
 video{
     background-color: rgb(245, 209, 1);
-}.left{
+}
+.left{
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
