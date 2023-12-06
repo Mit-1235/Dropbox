@@ -49,14 +49,14 @@ nav .logo:hover{
 
 
 li:hover a{
-    background-color: #e2dfcf;
+    background-color: #f6ead4;
 }
 .dropdown-menu{
     max-height: 300px;
     overflow-y: scroll;
 }
 li .dropdown-menu, .dropdown-item{
-    background-color: #e2dfcf;
+    background-color: #f6ead4;
     
 }
 li .dropdown-item:hover{
@@ -283,6 +283,19 @@ video{
 
 .clickBtn:hover{
     background-color: rgba(212, 209, 199, 0.521);
+}
+/* @media screen and (min-width: 768px) {
+    .content-7 .box{
+        display: none;
+    }
+} */
+@media screen and (max-width: 768px) {
+    /* .content-7 .box{
+        display: none;
+    } */
+    .content-7 .box{
+        display: block;
+    }
 }
 
 

@@ -1,0 +1,274 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+nav{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+      
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background-color: white;
+    }
+       
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(190, 194, 196); 
+    }
+      
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(87, 87, 87);   
+    }
+}
+
+nav .logo{
+    color: black;
+    background-color: white;
+    font-weight: 700;
+}
+
+nav .logo:hover{
+    color: black;
+}
+
+.dropbtn{
+    color: black;
+    font-size: 16px;
+}
+
+
+
+
+li:hover a{
+    background-color: #f6ead4;
+}
+.dropdown-menu{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+li .dropdown-menu, .dropdown-item{
+    background-color: #f6ead4;
+    
+}
+li .dropdown-item:hover{
+    background-color: #d1cbaeb9;
+}
+.dropdown-menu p{
+    font-weight: 800;
+    font-size: 14px;
+}
+.dropdown-menu span{
+    font-weight: 600;
+}
+.dropdown-item{
+    font-size: 12px;
+}
+@media screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
+
+
+
+
+li a, .signin, .login {
+    color: black;
+}
+li a:hover, .signin:hover, .login:hover{
+    background-color: rgba(219, 213, 179, 0.699);
+    color: black;
+}
+.btn-1{
+    background-color: rgb(49, 49, 232);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.btn-1:hover{
+    background-color: rgb(29, 29, 193);
+    color: white;
+}
+
+
+
+.content-1 span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.content-1 a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 160, 160);
+
+}
+.content-1 a:hover{
+    color: white;
+    text-decoration-color: white;
+}
+.left{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.right{
+    background-color: rgb(168, 201, 226);
+}
+.right img{
+    width: 480px;
+}
+.btn-2{
+    border: none;
+    color: black;
+    height: 75px;
+    width: 380px;
+    background-color: rgb(0, 118, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.btn-2:hover{
+    background-color: rgb(37, 67, 217);
+}
+
+
+@media screen and (max-width: 500px) {
+    .btn-2{
+        width: 190px;
+        height: 65px;
+    }
+    .right img{
+        width: 380px;
+    }
+}
+@media screen and (max-width: 768px){
+    .content-1 h1{
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .content-1 h1{
+        font-size: 24px;
+    }  
+    .right img{
+        width: 300px;
+    }  
+}
+@media screen and (max-width: 300px) {
+    .right img{
+        width: 260px;
+    }
+}
+
+
+
+
+.content-2{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: rgb(237, 236, 233);
+}
+
+
+
+
+.content-3{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: rgb(237, 236, 233);
+}
+.data-1{
+    background-color: rgba(225, 220, 207, 0.589);
+}
+.content-3 span{
+    font-weight: 600;
+}
+
+
+
+.content-4{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-4 h2{
+    width: 70%;
+}
+
+
+
+
+.content-5{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Montserrat', sans-serif;
+}
+.content-5 input[type=radio]{
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+.line-1 p{
+    font-size: 15px;
+    font-weight: 100;
+}
+.content-5 .card-1{
+    background-color: rgb(237, 236, 233);
+    border-radius: 10px;
+}
+.content-5 .card-2{
+    background-color: rgb(224, 223, 218);
+    border-radius: 10px;
+}
+.content-5 .card-3{
+    background-color: rgb(215, 213, 207);
+    border-radius: 10px;
+}
+.card-1 span, .card-2 span, .card-3 span{
+    font-weight: 700;
+}
+.card-1 h4, .card-2 h4, .card-3 h4{
+    font-weight: 800;
+}
+.btn-3{
+    width: 100%;
+    padding-left: 10%;
+    padding: 18px 0px 18px 30px;
+    /* height: 200%; */
+    border: none;
+    background-color: rgb(33, 85, 255);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: all ease 0.2s;
+}
+.btn-3:hover{
+    background-color: rgba(29, 71, 209, 0.943);
+}
+.card-1 a, .card-2 a, .card-3 a{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: rgb(136, 136, 136);
+    font-weight: 700;
+}
+.card-1 a:hover, .card-2 a:hover, .card-3 a:hover{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-weight: 700;
+}
+.card-2 .under, .card-3 .under{
+    text-decoration: underline dotted black;
+}
+
+
+
+
