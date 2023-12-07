@@ -121,14 +121,16 @@ li a:hover, .signin:hover, .login:hover{
     font-family: 'Montserrat', sans-serif;
 }
 .right{
-    background-color: rgb(24, 196, 226);
+    background-color: rgb(145, 215, 14);
 }
-
+.right img{
+    width: 480px;
+}
 .btn-2{
     border: none;
     color: black;
     height: 75px;
-    width: 380px;
+    width: 300px;
     background-color: rgb(0, 118, 252);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -137,32 +139,34 @@ li a:hover, .signin:hover, .login:hover{
     background-color: rgb(37, 67, 217);
 }
 
-@media screen and (max-width: 992px) {
-    .right{
-        height: 513px;
-    }
-}
+
 @media screen and (max-width: 500px) {
     .btn-2{
         width: 190px;
         height: 65px;
+    }
+    .right img{
+        width: 380px;
     }
 }
 @media screen and (max-width: 768px){
     .content-1 h1{
         font-size: 27px;
     }
-    .right{
-        height: 100%;
-    }
 }
 @media screen and (max-width: 400px) {
     .content-1 h1{
         font-size: 24px;
-    }     
+    }  
+    .right img{
+        width: 300px;
+    }  
 }
-
-
+@media screen and (max-width: 300px) {
+    .right img{
+        width: 260px;
+    }
+}
 
 
 
@@ -171,16 +175,6 @@ li a:hover, .signin:hover, .login:hover{
     font-family: 'Montserrat', sans-serif;
     color: black;
     background-color: rgb(237, 236, 233);
-    font-size: 36px;
-}
-.content-2 p{
-    width: 60%;
-}
-@media screen and (max-width: 768px) {
-    .content-2 p{
-        width: 100%;
-        font-size: 24px;
-    }
 }
 
 
@@ -196,79 +190,16 @@ li a:hover, .signin:hover, .login:hover{
 }
 .content-3 span{
     font-weight: 600;
-    font-size: 17px;
 }
-.content-3 p{
-    font-size: 15px;
-}
+
 
 
 
 .content-4{
     background-color: rgb(243, 243, 243);
-    color: black;
     font-family: 'Montserrat', sans-serif;
 }
-.content-4 h3{
-    width: 70%;
-}
-@media screen and (max-width: 768px) {
-    .content-4 h3{
-        width: 100%;
-    }
-}
-
-
-
-.content-5{
-    background-color: rgb(243, 243, 243);
-    font-family: 'Montserrat', sans-serif;
-}
-.content-5 a{
-    color: black;
-    font-weight: 700;
-    text-decoration: underline rgb(155, 155, 155);
-}
-.content-5 a:hover{
-    color: black;
-    text-decoration: underline black;
-}
-.clickBtn{
-    background-color: white;
-    border: none;
-    transition: all ease 0.5s;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.clickBtn:hover{
-    background-color: rgba(212, 209, 199, 0.521);
-}
-
-
-
-
-.content-6{
-    background-color: rgb(243, 243, 243);
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-.content-6 h3, .content-6 p{
-    width: 70%;
-}
-@media screen and (max-width: 768px) {
-    .content-6 h3, .content-6 p{
-        width: 90%;
-    }
-}
-
-
-
-.content-7{
-    background-color: rgb(243, 243, 243);
-    font-family: 'Montserrat', sans-serif;
-}
-.content-7 input[type=radio]{
+.content-4 input[type=radio]{
     width: 20px;
     height: 20px;
     accent-color: black;
@@ -277,15 +208,15 @@ li a:hover, .signin:hover, .login:hover{
     font-size: 15px;
     font-weight: 100;
 }
-.content-7 .card-1{
+.content-4 .card-1{
     background-color: rgb(237, 236, 233);
     border-radius: 10px;
 }
-.content-7 .card-2{
+.content-4 .card-2{
     background-color: rgb(224, 223, 218);
     border-radius: 10px;
 }
-.content-7 .card-3{
+.content-4 .card-3{
     background-color: rgb(215, 213, 207);
     border-radius: 10px;
 }
@@ -299,6 +230,7 @@ li a:hover, .signin:hover, .login:hover{
     width: 100%;
     padding-left: 10%;
     padding: 18px 0px 18px 30px;
+    /* height: 200%; */
     border: none;
     background-color: rgb(33, 85, 255);
     color: white;
@@ -328,25 +260,108 @@ li a:hover, .signin:hover, .login:hover{
 
 
 
+
+.content-5{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .content-5 h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.content-6{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Montserrat', sans-serif;
+}
+.clickBtn{
+    background-color: white;
+    border: none;
+    transition: all ease 0.5s;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.clickBtn:hover{
+    background-color: rgba(212, 209, 199, 0.521);
+}
+@media screen and (max-width: 768px) {
+    .content-6 .box{
+        display: block;
+    }
+}
+
+
+
+.content-7{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .content-7 h1{
+        font-size: 30px;
+    }
+}
+
+
+
 .content-8{
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-.content-8 p{
-    font-size: 36px;
+.content-8 .slide-txt-1{
+    font-size: 24px;
+    line-height: 30px;
 }
 .content-8 a{
     color: white;
-    text-decoration: underline white;
-}
+    font-weight: 800;
+    font-size: 17px;
+    text-decoration: underline;
+    text-decoration-color: rgb(142, 142, 142);
+}  
 .content-8 a:hover{
     color: white;
-    text-decoration: none;
+    text-decoration-color: white;
+} 
+.content-8 span{
+    font-size: 14px;
+    font-weight: 700;
 }
-@media screen and (max-width: 768px) {
-    .content-8 p{
-        font-size: 26px;
+.content-8 .text-1{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(154, 154, 154);
+}
+.content-8 .last-line{
+    font-size: 14px;
+    color: rgb(143, 143, 143);
+}
+svg{
+    display: none;
+    transition: all ease 1s;
+}
+.content-8:hover svg{
+    display: flex;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .content-8 .slide-txt-1{
+        font-size: 20px;
+        line-height: 21px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .content-8 .slide-txt-1{
+        font-size: 20px;
+        line-height: 28px;
     }
 }
 
@@ -358,88 +373,7 @@ li a:hover, .signin:hover, .login:hover{
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
-.content-9 p{
-    font-size: 36px;
-    line-height: 40px;
-    width: 60%;
-}
-@media screen and (max-width: 768px) {
-    .content-9 p{
-        font-size: 26px;
-        line-height: 30px;
-        width: 80%;
-    }
-}
-
-
-
-
-.content-10{
-    background-color: black;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-.content-10 .slide-txt-1{
-    font-size: 24px;
-    line-height: 30px;
-}
-.content-10 a{
-    color: white;
-    font-weight: 800;
-    font-size: 17px;
-    text-decoration: underline;
-    text-decoration-color: rgb(142, 142, 142);
-}  
-.content-10 a:hover{
-    color: white;
-    text-decoration-color: white;
-} 
-.content-10 span{
-    font-size: 14px;
-    font-weight: 700;
-}
-.content-10 .text-1{
-    font-size: 14px;
-    font-weight: 700;
-    color: rgb(154, 154, 154);
-}
-.content-10 .last-line{
-    font-size: 14px;
-    color: rgb(143, 143, 143);
-}
-svg{
-    display: none;
-    transition: all ease 1s;
-}
-.content-10:hover svg{
-    display: flex;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .content-10 .slide-txt-1{
-        font-size: 20px;
-        line-height: 21px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .content-10 .slide-txt-1{
-        font-size: 20px;
-        line-height: 28px;
-    }
-}
-
-
-
-
-.content-11{
-    background-color: black;
-    color: white;
-    text-align: center;
-    margin: auto;
-}
-.content-11 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.content-9 h1{
     font-size: 45px;
 }
 .btn-5{
@@ -455,8 +389,17 @@ svg{
 .btn-5:hover{
     background-color: rgb(55, 118, 255);
 }
+.content-9 a{
+    color: black;
+    font-weight: 700;
+    text-decoration: underline rgb(152, 152, 152);
+}
+.content-9 a:hover{
+    color: black;
+    text-decoration: underline black;
+}
 @media screen and (max-width: 768px) {
-    .content-11 h1{
+    .content-9 h1{
         font-size: 27px;
     }
     .btn-5{
@@ -466,7 +409,7 @@ svg{
     }
 }
 @media screen and (max-width: 992px) {
-    .content-11 h1{
+    .content-9 h1{
         padding-bottom: 15px;
     }
 }
