@@ -48,18 +48,18 @@ nav .logo:hover{
 
 
 
-li:hover a{
+nav li:hover a{
     background-color: #f6ead4;
 }
 .dropdown-menu{
     max-height: 300px;
     overflow-y: scroll;
 }
-li .dropdown-menu, .dropdown-item{
+nav li .dropdown-menu, .dropdown-item{
     background-color: #f6ead4;
     
 }
-li .dropdown-item:hover{
+nav li .dropdown-item:hover{
     background-color: #d1cbaeb9;
 }
 .dropdown-menu p{
@@ -81,10 +81,10 @@ li .dropdown-item:hover{
 
 
 
-li a, .signin, .login {
+nav li a, .signin, .login {
     color: black;
 }
-li a:hover, .signin:hover, .login:hover{
+nav li a:hover, .signin:hover, .login:hover{
     background-color: rgba(219, 213, 179, 0.699);
     color: black;
 }
@@ -115,25 +115,25 @@ li a:hover, .signin:hover, .login:hover{
     color: white;
     text-decoration-color: white;
 }
-.left{
+.content-1 .left{
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 .right{
-    background-color: rgb(145, 215, 14);
+    background-color: rgb(232, 196, 14);
 }
 .btn-2{
     border: none;
     color: black;
     height: 75px;
-    width: 300px;
+    width: 280px;
     background-color: rgb(0, 118, 252);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 .btn-2:hover{
-    background-color: rgb(37, 67, 217);
+    background-color: rgb(48, 145, 255);
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -168,10 +168,26 @@ li a:hover, .signin:hover, .login:hover{
 
 
 
+/* .content-2{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: rgb(237, 236, 233);
+} */
+
 .content-2{
     font-family: 'Montserrat', sans-serif;
     color: black;
     background-color: rgb(237, 236, 233);
+}
+.content-2 h1, .content-4 h1{
+    width: 60%;
+    font-size: 36px;
+}
+@media screen and (max-width: 768px) {
+    .content-2 h1, .content-4 h1{
+        width: 100%;
+        font-size: 30px;
+    }
 }
 
 
@@ -181,6 +197,9 @@ li a:hover, .signin:hover, .login:hover{
     font-family: 'Montserrat', sans-serif;
     color: black;
     background-color: rgb(237, 236, 233);
+}
+.content-3 img{
+    background-color: rgba(225, 220, 207, 0.589);
 }
 .data-1{
     background-color: rgba(225, 220, 207, 0.589);
@@ -194,9 +213,18 @@ li a:hover, .signin:hover, .login:hover{
 
 .content-4{
     background-color: rgb(243, 243, 243);
+    color: black;
     font-family: 'Montserrat', sans-serif;
 }
-.content-4 input[type=radio]{
+
+
+
+
+.content-5{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Montserrat', sans-serif;
+}
+.content-5 input[type=radio]{
     width: 20px;
     height: 20px;
     accent-color: black;
@@ -205,15 +233,15 @@ li a:hover, .signin:hover, .login:hover{
     font-size: 15px;
     font-weight: 100;
 }
-.content-4 .card-1{
+.content-5 .card-1{
     background-color: rgb(237, 236, 233);
     border-radius: 10px;
 }
-.content-4 .card-2{
+.content-5 .card-2{
     background-color: rgb(224, 223, 218);
     border-radius: 10px;
 }
-.content-4 .card-3{
+.content-5 .card-3{
     background-color: rgb(215, 213, 207);
     border-radius: 10px;
 }
@@ -227,7 +255,6 @@ li a:hover, .signin:hover, .login:hover{
     width: 100%;
     padding-left: 10%;
     padding: 18px 0px 18px 30px;
-    /* height: 200%; */
     border: none;
     background-color: rgb(33, 85, 255);
     color: white;
@@ -258,12 +285,104 @@ li a:hover, .signin:hover, .login:hover{
 
 
 
-.content-5{
-    background-color: rgb(243, 243, 243);
+.content-6{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: rgb(237, 236, 233);
+}
+.content-6 .right{
+    background-color: rgba(225, 220, 207, 0.589);
+}
+.content-6 .left{
+    padding-left: 140px;
+}
+@media screen and (max-width: 1200px) {
+    .content-6 .left{
+        padding-left: 0px;
+    }
+}
+.content-6 span{
+    font-weight: 700;
+}
+.content-6 .btn-4{
+    border: 2px solid black;
+    background-color: rgb(237, 236, 233);
+    color: black;
+    width: 80%;
+    height: 17%;
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 10%;
+    transition:  all ease 0.3s;
+}
+.content-6 .btn-4:hover{
+    background-color: rgba(211, 211, 211, 0.763);
+}
+
+
+.content-6 a{
+    color: black;
+    text-decoration: underline black;
+}
+.content-6 a:hover{
+    color: black;
+    text-decoration: none;
+}
+.content-6 .btn-5{
+    border: 2px solid black;
+    background-color: rgb(237, 236, 233);
+    color: black;
+    width: 80%;
+    height: 10%;
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 6%;
+    transition:  all ease 0.3s;
+}
+.content-6 .btn-5:hover{
+    background-color: rgba(211, 211, 211, 0.763);
+}
+.content-6 .right-2{
+    background-color: rgb(9, 114, 122);
+}
+
+
+
+
+.content-7{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.content-7 ul, .content-7 p{
+    width: 50%;
+}
+@media screen and (max-width: 786px) {
+    .content-7 ul, .content-7 p{
+        width: 80%;
+    }
+}
+
+
+
+.content-8{
+    background-color: black;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
+.content-8 h1{
+    font-size: 36px;
+}
+.content-8 p{
+    width: 60%;
+}
 @media screen and (max-width: 768px) {
-    .content-5 h1{
+    .content-8 p{
+        width: 80%;
+    }
+    .content-8 h1{
         font-size: 30px;
     }
 }
@@ -271,8 +390,111 @@ li a:hover, .signin:hover, .login:hover{
 
 
 
+.content-9{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-9 span{
+    font-weight: 800;
+}
+.content-9 p{
+    font-weight: 500;
+}
 
-.content-6{
+
+
+
+.content-10{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Montserrat', sans-serif;
+}
+.clickBtn{
+    background-color: white;
+    border: none;
+    transition: all ease 0.5s;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.clickBtn:hover{
+    background-color: rgba(212, 209, 199, 0.521);
+}
+
+
+
+
+
+.content-11{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-11 h1{
+    font-size: 45px;
+}
+.btn-6{
+    border: none;
+    background-color: rgb(49, 107, 232);
+    height: 70px;
+    width: 240px;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-6:hover{
+    background-color: rgb(55, 118, 255);
+}
+.content-11 a{
+    color: black;
+    font-weight: 700;
+    text-decoration: underline rgb(152, 152, 152);
+}
+.content-11 a:hover{
+    color: black;
+    text-decoration: underline black;
+}
+@media screen and (max-width: 768px) {
+    .content-11 h1{
+        font-size: 27px;
+    }
+    .btn-6{
+        height: 60px;
+        width: 200px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .content-9 h1{
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* .content-5{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .content-5 h1{
+        font-size: 30px;
+    }
+} */
+
+
+
+
+
+/* .content-6{
     background-color: rgb(243, 243, 243);
     font-family: 'Montserrat', sans-serif;
 }
@@ -294,11 +516,11 @@ li a:hover, .signin:hover, .login:hover{
     .content-6 .box{
         display: block;
     }
-}
+} */
 
 
 
-.content-7{
+/* .content-7{
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -307,11 +529,11 @@ li a:hover, .signin:hover, .login:hover{
     .content-7 h1{
         font-size: 30px;
     }
-}
+} */
 
 
 
-.content-8{
+/* .content-8{
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -363,12 +585,12 @@ svg{
         font-size: 20px;
         line-height: 28px;
     }
-}
+} */
 
 
 
 
-.content-9{
+/* .content-9{
     background-color: rgb(243, 243, 243);
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -412,7 +634,7 @@ svg{
     .content-9 h1{
         padding-bottom: 15px;
     }
-}
+} */
 
 
 

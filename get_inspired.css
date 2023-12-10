@@ -9,6 +9,25 @@ body{
 nav{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+      
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background-color: white;
+    }
+       
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(190, 194, 196); 
+    }
+      
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(87, 87, 87);   
+    }
 }
 
 nav .logo{
@@ -25,62 +44,41 @@ nav .logo:hover{
     color: black;
     font-size: 16px;
 }
-  
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-  
-.dropdown-content{
-    display: none;
-    position: absolute;
+
+
+
+li:hover a{
     background-color: #e2dfcf;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
- 
-.dropdown-content a{
-    width: 200px;
-    color: black;
-    padding: 6px 14px;
-    text-decoration: none;
-    display: block;
-    float: left;
+.dropdown-menu{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+li .dropdown-menu, .dropdown-item{
+    background-color: #e2dfcf;
+}
+li .dropdown-item:hover{
+    background-color: #d1cbaeb9;
+}
+.dropdown-menu p{
+    font-weight: 800;
+    font-size: 14px;
+}
+.dropdown-menu span{
+    font-weight: 600;
+}
+.dropdown-item{
     font-size: 12px;
 }
-
-.dropdown-content p{
-    width: 100%;
-    color: black;
-    padding: 14px 16px 5px 10px;
-    font-size: 14px;
-    font-weight: 800;
-    margin-bottom: 0px;
+@media screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
 }
 
-.dropdown-content span{
-    font-weight: 700;
-}
 
-.dropdown-content a:hover{
-	display: block;
-   }
+  
 
-.dropdown-content a:hover {
-    background-color: #d1cbaeb9;
-    text-decoration: none;
-    color: black;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #d1cbaeb9;
-    color: black;
-}
 
 li a, .signin, .login {
     color: black;
@@ -105,36 +103,38 @@ li a:hover, .signin:hover, .login:hover{
 
 .content-1{
     background-color: black;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
-
-.row .txt{
-    text-align: center;
-    margin: auto;
-}
-.content-1 h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 38px;
+.content-1 h1{
+    font-weight: 600;
 }
 .content-1 p{
-    min-width: 500px;
-    max-width: 750px;
-    font-size: 18px;
+    width: 60%;
+    font-size: 16px;
     font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    .content-1 p{
+        width: 90%;
+    }
+    .content-1 h1{
+        font-size: 30px;
+    }
 }
 .btn-2{
+    background-color: rgb(32, 96, 235);
+    color: black;
     border: none;
-    background-color: rgb(49, 49, 232);
-    color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    height: 60px;
-    width: 180px;
+    padding: 20px 16px 20px 22px;
+    width: 200px;
+    font-weight: 700;
 }
 .btn-2:hover{
-    background-color: rgb(29, 29, 193);
-    color: white;
+    background-color: rgb(81, 129, 233);
 }
+
+
 
 
 
@@ -149,7 +149,35 @@ li a:hover, .signin:hover, .login:hover{
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(249, 248, 232);
 }
-.content-3 span, .content-4 span{
+/* .content-3 .img-fluid {
+    max-width: 100%;
+    height: auto;
+} */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .content-3 img {
+        height: 50%;
+    }
+
+    /* .content-3 img{
+        height: 50%; */
+        /* background-size: ; */
+        /* background-repeat: no-repeat;
+        background-position: center;
+        filter: ; */
+    /* }
+    .content-3 .left{
+        height: 50%;
+    } */
+    /* .content-3 img{
+        height: 70%;
+    } */
+    /* img{
+        height: 60%;
+        width: 100%;
+    } */
+}
+/* .content-3 span, .content-4 span{
     font-size: 14px;
     font-weight: 600;
 }
@@ -159,8 +187,6 @@ li a:hover, .signin:hover, .login:hover{
 }
 .btn-3, .btn-4{
     height: 60px;
-    min-width: 300px;
-    /* max-width: 350px; */
     border: none;
     color: white;
     background-color: rgb(4, 4, 234);
@@ -171,7 +197,7 @@ li a:hover, .signin:hover, .login:hover{
 .con-3 img{
     width: 100%;
     height: auto;
-}
+} */
 
 
 
