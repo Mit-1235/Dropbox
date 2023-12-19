@@ -309,6 +309,9 @@ li a:hover, .signin:hover, .login:hover{
     font-size: 18px;
     font-weight: 600;
 }
+.clickBtn img{
+    transition: all ease 0.5s;
+}
 
 .clickBtn:hover{
     background-color: rgba(212, 209, 199, 0.521);

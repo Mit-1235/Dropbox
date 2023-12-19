@@ -66,7 +66,7 @@
                             <a class="dropdown-item" href="capture.html"><span>Capture</span><br>Create screen  recordings and video messages</a>
                             <a class="dropdown-item" href="replay.html"><span>Replay</span><br>Review and approve video faster</a>
                             <a class="dropdown-item" href="dash.html"><span>Dash(beta)</span><br>Serach, organize and find answers</a>
-                            <a class="dropdown-item" href="#"><span>Early access</span><br>Preview new product experiences</a>
+                            <a class="dropdown-item" href="early_access.html"><span>Early access</span><br>Preview new product experiences</a>
                         </div>
                     </li>
                     <li class="dropdown nav-item">
@@ -379,76 +379,6 @@
 
 
 </div>
-    <script>
-        function changePrice(){
-            document.getElementById("priceOne").innerHTML = "$22 / month";
-            document.getElementById("priceTwo").innerHTML = "$24 / user / month";
-            document.getElementById("priceThree").innerHTML = "$32 / user / month";
-        }
-
-        function changePrice1(){
-            document.getElementById("priceOne").innerHTML = "$18 / month";
-            document.getElementById("priceTwo").innerHTML = "$20 / user / month";
-            document.getElementById("priceThree").innerHTML = "$26 / user / month";
-        }
-
-
-
-
-        let index = 1;
-        current(index);
-
-        function changeSlide(n){
-            current(index = n);
-        }
- 
-        function current(n){
-            let i;
-            let btn = document.getElementsByClassName("clickBtn");
-            let ig = document.getElementsByClassName("box");
-            for(i = 0; i < ig.length; i++){
-                ig[i].style.display = "none";
-            }
-            for(i = 0; i < btn.length; i++){
-                btn[i].length = btn[i].className.replace(" active","");
-            }
-            ig[index - 1].style.display = "block";
-            btn[index - 1].className += " active";
-        }
-
-
-
-        var btn = document.querySelectorAll(".clickBtn");
-        var ig = document.querySelectorAll(".bottomArrow");
-
-        var arrow = 0;
-
-        btn.forEach(function(clickBtn, index){
-            clickBtn.addEventListener('click', function() {
-                if(arrow === 0){
-                    ig[index].style.transform = 'rotate(180deg)';
-                    // ig[index].style.padding = '0px 16px 0px 0px';
-                    arrow = 1;
-                }
-                else{
-                    ig[index].style.transform = 'rotate(0deg)';
-                    // ig[index].style.padding = '0px 16px 0px 0px';
-                    arrow = 0;
-                }
-            })
-        })
-
-
-
-
-
-
-
-
-
-
-
-    </script>
     
 </body>
 </html>

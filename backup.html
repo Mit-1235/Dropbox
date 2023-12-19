@@ -66,7 +66,7 @@
                         <a class="dropdown-item" href="capture.html"><span>Capture</span><br>Create screen  recordings and video messages</a>
                         <a class="dropdown-item" href="replay.html"><span>Replay</span><br>Review and approve video faster</a>
                         <a class="dropdown-item" href="dash.html"><span>Dash(beta)</span><br>Serach, organize and find answers</a>
-                        <a class="dropdown-item" href="#"><span>Early access</span><br>Preview new product experiences</a>
+                        <a class="dropdown-item" href="early_access.html"><span>Early access</span><br>Preview new product experiences</a>
                     </div>
                 </li>
                 <li class="dropdown nav-item">
@@ -393,7 +393,9 @@
                       <div class="card-header p-0" id="headingOne">
                         <p class="mb-0">
                           <button  onclick="changeSlide(1)" class="clickBtn w-100 px-4 py-4 text-left collapsed" id="clickBtn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                             Migrate files to a new computer
+                            <!-- <img class="arrow align-items-end" src="icon/bottom-arrow.svg" alt=""> -->
                           </button>
                         </p>
                       </div>
@@ -410,6 +412,7 @@
                       <div class="card-header p-0" id="headingTwo">
                         <h5 class="mb-0">
                           <button onclick="changeSlide(2)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                             Easily recover if something goes wrong
                           </button>
                         </h5>
@@ -424,6 +427,7 @@
                       <div class="card-header p-0" id="headingThree">
                         <h5 class="mb-0">
                           <button onclick="changeSlide(3)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                             Consolidate tools and have less to manage
                           </button>
                         </h5>
@@ -438,6 +442,7 @@
                         <div class="card-header p-0" id="headingFour">
                           <h5 class="mb-0">
                             <button onclick="changeSlide(4)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                                 Keep your files secure
                             </button>
                           </h5>
@@ -452,6 +457,7 @@
                         <div class="card-header p-0" id="headingFive">
                           <h5 class="mb-0">
                             <button onclick="changeSlide(5)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                                 Keep backed up files in their own safe place
                             </button>
                           </h5>
@@ -466,6 +472,7 @@
                         <div class="card-header p-0" id="headingSix">
                           <h5 class="mb-0">
                             <button onclick="changeSlide(6)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                                 Back up multiple devices
                             </button>
                           </h5>
@@ -480,6 +487,7 @@
                         <div class="card-header p-0" id="headingSeven">
                           <h5 class="mb-0">
                             <button onclick="changeSlide(7)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                                 View backups whenever, wherever
                             </button>
                           </h5>
@@ -792,6 +800,38 @@
             ig[index - 1].style.display = "block";
             btn[index - 1].className += " active";
         }
+
+
+
+
+        var btns = document.querySelectorAll(".clickBtn");
+        var img = document.querySelectorAll(".arrow");
+
+
+        btns.forEach(function(btn, index){
+            // img[index].isRotated = false;
+            var i = 0;
+            
+            btn.addEventListener('click', function() {
+
+                // img[index].isRotated = !img[index].isRotated;
+                // i = !0;
+                if(i == 0){
+                    img[index].style.transform = 'rotate(180deg)';
+                    // i = 1;
+                }
+                else{
+                    img[index].style.transform = 'rotate(0deg)';
+                    // i = 0;
+                }
+                img.forEach(function(otherImg, otherIndex) {
+                    if (otherIndex !== index) {
+                        otherImg.i = 0;//false;
+                        otherImg.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

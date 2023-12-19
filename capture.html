@@ -66,7 +66,7 @@
                             <a class="dropdown-item" href="capture.html"><span>Capture</span><br>Create screen  recordings and video messages</a>
                             <a class="dropdown-item" href="replay.html"><span>Replay</span><br>Review and approve video faster</a>
                             <a class="dropdown-item" href="dash.html"><span>Dash(beta)</span><br>Serach, organize and find answers</a>
-                            <a class="dropdown-item" href="#"><span>Early access</span><br>Preview new product experiences</a>
+                            <a class="dropdown-item" href="early_access.html"><span>Early access</span><br>Preview new product experiences</a>
                         </div>
                     </li>
                     <li class="dropdown nav-item">
@@ -407,7 +407,7 @@
                       <div class="card-header p-0" id="headingOne">
                         <p class="mb-0">
                           <button  onclick="changeSlide(1)" class="clickBtn w-100 text-left px-4 py-4 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <img class="bottomArrow" src="icon/bottom-arrow.svg" alt="">
+                            <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                             Share status updates
                           </button>
                         </p>
@@ -422,7 +422,7 @@
                       <div class="card-header p-0" id="headingTwo">
                         <h5 class="mb-0">
                           <button onclick="changeSlide(2)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <img class="bottomArrow" src="icon/bottom-arrow.svg" alt="">
+                            <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                             Record a software tutorial
                           </button>
                         </h5>
@@ -437,7 +437,7 @@
                       <div class="card-header p-0" id="headingThree">
                         <h5 class="mb-0">
                           <button onclick="changeSlide(3)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <img class="bottomArrow" src="icon/bottom-arrow.svg" alt="">
+                            <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                             Streamline onboarding and tech support
                           </button>
                         </h5>
@@ -452,7 +452,7 @@
                         <div class="card-header p-0" id="headingFour">
                           <h5 class="mb-0">
                             <button onclick="changeSlide(4)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <img class="bottomArrow" src="icon/bottom-arrow.svg" alt="">
+                                <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                                 Deliver a sales proposal
                             </button>
                           </h5>
@@ -467,7 +467,7 @@
                         <div class="card-header p-0" id="headingFive">
                           <h5 class="mb-0">
                             <button onclick="changeSlide(5)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <img class="bottomArrow" src="icon/bottom-arrow.svg" alt="">
+                                <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                                 Walk through a design
                             </button>
                           </h5>
@@ -482,7 +482,7 @@
                         <div class="card-header p-0" id="headingSix">
                           <h5 class="mb-0">
                             <button onclick="changeSlide(6)" class="clickBtn w-100 text-left px-4 py-4" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <img class="bottomArrow" src="icon/bottom-arrow.svg" alt="">
+                                <img class="arrow" src="icon/bottom-arrow.svg" alt="">
                                 Give students feedback
                             </button>
                           </h5>
@@ -798,25 +798,34 @@
 
 
 
-        var btn = document.querySelectorAll(".clickBtn");
-        var ig = document.querySelectorAll(".bottomArrow");
+        var btns = document.querySelectorAll(".clickBtn");
+        var img = document.querySelectorAll(".arrow");
 
-        var arrow = 0;
 
-        btn.forEach(function(clickBtn, index){
-            clickBtn.addEventListener('click', function() {
-                if(arrow === 0){
-                    ig[index].style.transform = 'rotate(180deg)';
-                    // ig[index].style.padding = '0px 16px 0px 0px';
-                    arrow = 1;
+        btns.forEach(function(btn, index){
+            // img[index].isRotated = false;
+            var i = 0;
+            
+            btn.addEventListener('click', function() {
+
+                // img[index].isRotated = !img[index].isRotated;
+                // i = !0;
+                if(i == 0){
+                    img[index].style.transform = 'rotate(180deg)';
+                    // i = 1;
                 }
                 else{
-                    ig[index].style.transform = 'rotate(0deg)';
-                    // ig[index].style.padding = '0px 16px 0px 0px';
-                    arrow = 0;
+                    img[index].style.transform = 'rotate(0deg)';
+                    // i = 0;
                 }
-            })
-        })
+                img.forEach(function(otherImg, otherIndex) {
+                    if (otherIndex !== index) {
+                        otherImg.i = 0;//false;
+                        otherImg.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
 
 
 
